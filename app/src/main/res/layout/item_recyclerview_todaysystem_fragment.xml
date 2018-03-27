@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:id="@+id/cv_item_recyclerview_todaysystemquery"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    app:cardCornerRadius="@dimen/card_Corner_Radius"
+                                    app:cardElevation="3dp"
+                                    app:cardPreventCornerOverlap="false"
+                                    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="3dp">
+
+        <TextView
+            android:id="@+id/tv0"
+            style="@style/RecyclerViewItemTextTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="试验室：" />
+
+        <TextView
+            android:id="@+id/tv0_item_recyclerview_lab"
+            style="@style/RecyclerViewItemTextTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv0"
+            android:layout_toRightOf="@+id/tv0" />
+
+
+        <TextView
+            android:id="@+id/tv1"
+            style="@style/RecyclerViewItemTextTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv0"
+            android:text="工程名称：" />
+
+        <TextView
+            android:id="@+id/tv_item_projectname"
+            style="@style/RecyclerViewItemTextTheme"
+            android:textColor="@color/cpb_green"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv1"
+            android:layout_toRightOf="@+id/tv1" />
+
+        <TextView
+            android:id="@+id/tv4"
+            style="@style/RecyclerViewItemTextTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv1"
+            android:text="浇筑部位：" />
+
+        <TextView
+            android:id="@+id/tv_postion"
+            style="@style/RecyclerViewItemTextTheme"
+            android:textColor="@color/cpb_green"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv4"
+            android:layout_toRightOf="@+id/tv4" />
+
+        <TextView
+            android:id="@+id/tv5"
+            style="@style/RecyclerViewItemTextTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv4"
+            android:text="养护日期：" />
+
+        <TextView
+            android:id="@+id/tv_maintaintime"
+            style="@style/RecyclerViewItemTextTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv5"
+            android:layout_toRightOf="@+id/tv5" />
+
+
+
+        <TextView
+            android:id="@+id/tv6"
+            style="@style/RecyclerViewItemTextTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv5"
+            android:text="设计强度：" />
+
+        <TextView
+            android:id="@+id/tv_sjqd"
+            style="@style/RecyclerViewItemTextTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv6"
+            android:layout_toRightOf="@+id/tv6" />
+
+        <TextView
+            android:id="@+id/tv7"
+            style="@style/RecyclerViewItemTextTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv5"
+            android:text="龄期："
+            android:layout_toLeftOf="@+id/tv_lingqi"
+            />
+
+        <TextView
+            android:id="@+id/tv_lingqi"
+            style="@style/RecyclerViewItemTextTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv6"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <com.shtoone.gdbhz.ui.SlantedTextView
+        android:id="@+id/stv_todaysys"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="top|right"
+        android:gravity="center"
+        app:slantedBackgroundColor="@color/material_green_300"
+        app:slantedLength="30dp"
+        app:slantedMode="right"
+        app:slantedText=""
+        app:slantedTextColor="@color/material_white"
+        app:slantedTextSize="13sp"/>
+
+</android.support.v7.widget.CardView>
